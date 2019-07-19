@@ -52,12 +52,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0927F70BC2D09A239122C662 /* Pods-iOSPlaygroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlaygroundUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlaygroundUITests/Pods-iOSPlaygroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1309AC620425F1576989CB78 /* Pods-iOSPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlayground.release.xcconfig"; path = "Target Support Files/Pods-iOSPlayground/Pods-iOSPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		155C4E2389ADB35CF755BDB5 /* Pods-iOSPlaygroundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlaygroundUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSPlaygroundUITests/Pods-iOSPlaygroundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2AC20E28679F950D90331E8D /* Pods_iOSPlaygroundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPlaygroundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43813472CA8DCE011F1A0A6F /* Pods-iOSPlaygroundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlaygroundUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlaygroundUITests/Pods-iOSPlaygroundUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		68A1939A9C14FD473F11D8ED /* Pods-iOSPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlayground/Pods-iOSPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		8C8D17326650738C240B5EEF /* Pods-iOSPlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlaygroundTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlaygroundTests/Pods-iOSPlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E02E3213606DC2050862FCA /* Pods_iOSPlaygroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPlaygroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1FE5B8A75F40B5E84FBCD0 /* Pods-iOSPlaygroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlaygroundTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSPlaygroundTests/Pods-iOSPlaygroundTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8BD42AA1654C3B1BCA44090 /* Pods-iOSPlaygroundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlaygroundUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSPlaygroundUITests/Pods-iOSPlaygroundUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C1AF5D0AB77CB15BC531032B /* Pods-iOSPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlayground/Pods-iOSPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		C3C4861222BDE19E00B24E1A /* iOSPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C4861522BDE19E00B24E1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3C4861622BDE19E00B24E1A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +80,7 @@
 		C3C4863922BDE19F00B24E1A /* iOSPlaygroundUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSPlaygroundUITests.m; sourceTree = "<group>"; };
 		C3C4863B22BDE19F00B24E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4D537A9ED6B01E4AE681F28 /* Pods_iOSPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7D8687D4ED75A90FAE4711D /* Pods-iOSPlaygroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlaygroundTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlaygroundTests/Pods-iOSPlaygroundTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F1F9C450D6041E335F004DE6 /* Pods-iOSPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlayground.debug.xcconfig"; path = "Target Support Files/Pods-iOSPlayground/Pods-iOSPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		FE4B22850B68F9BB3335AC12 /* Pods-iOSPlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlaygroundTests.release.xcconfig"; path = "Target Support Files/Pods-iOSPlaygroundTests/Pods-iOSPlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +132,12 @@
 				FE4B22850B68F9BB3335AC12 /* Pods-iOSPlaygroundTests.release.xcconfig */,
 				A8BD42AA1654C3B1BCA44090 /* Pods-iOSPlaygroundUITests.debug.xcconfig */,
 				155C4E2389ADB35CF755BDB5 /* Pods-iOSPlaygroundUITests.release.xcconfig */,
+				68A1939A9C14FD473F11D8ED /* Pods-iOSPlayground.debug.xcconfig */,
+				C1AF5D0AB77CB15BC531032B /* Pods-iOSPlayground.release.xcconfig */,
+				C7D8687D4ED75A90FAE4711D /* Pods-iOSPlaygroundTests.debug.xcconfig */,
+				8C8D17326650738C240B5EEF /* Pods-iOSPlaygroundTests.release.xcconfig */,
+				43813472CA8DCE011F1A0A6F /* Pods-iOSPlaygroundUITests.debug.xcconfig */,
+				0927F70BC2D09A239122C662 /* Pods-iOSPlaygroundUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -418,7 +430,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "source ~/.bash_profile\ncd ${SRCROOT}\nxcodebuild clean\nxcodebuild  -workspace iOSPlayground.xcworkspace -scheme iOSPlayground | xcpretty -r json-compilation-database --output compile_commands.json\noclint-json-compilation-database -v \\\n-e Pods \\\n-e AFNetworking \\\n-e Bugly \\\n-e CocoaLumberjack \\\n-e Masonry \\\n-e SDWebImage \\\n-e YYKit \\\noclint_args -- -report-type xcode \\\nexit\n";
+			shellScript = "echo \"sssssssss!!!!!!!!!!!\"\nsource ~/.bash_profile\ncd ${SRCROOT}\nxcodebuild clean\nxcodebuild  -workspace iOSPlayground.xcworkspace -scheme iOSPlayground | xcpretty -r json-compilation-database --output compile_commands.json\noclint-json-compilation-database -v \\\n-e Pods \\\n-e AFNetworking \\\n-e Bugly \\\n-e CocoaLumberjack \\\n-e Masonry \\\n-e SDWebImage \\\n-e YYKit \\\noclint_args -- -report-type xcode \\\n-disable-rule ShortVariableName \\\n-rc=MINIMUM_CASES_IN_SWITCH=3 \\\n-rc=CYCLOMATIC_COMPLEXITY=10 \\\n-rc=LONG_CLASS=700 \\\n-rc=LONG_LINE=200 \\\n-rc=NCSS_METHOD=40 \\\n-rc=NESTED_BLOCK_DEPTH=5 \\\n-rc=TOO_MANY_FIELDS=20 \\\n-rc=TOO_MANY_METHODS=30 \\\n-rc=TOO_MANY_PARAMETERS=6\nexit\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

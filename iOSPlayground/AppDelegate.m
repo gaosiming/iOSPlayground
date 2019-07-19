@@ -11,6 +11,12 @@
 #import <CocoaLumberjack/CocoaLumberjack.h>
 
 
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif
+
 
 @interface AppDelegate ()
 
@@ -37,11 +43,27 @@
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-    
-    DDLogVerbose(@"application %d Will enter background",123);
+   NSNumber *i = [[NSNumber alloc] initWithInt:1111];
+    int j =0;
+    DDLogVerbose(@"application %@ %d Will enter background",i, j);
     
 }
 
+-(NSString *)getValueForKey:(NSString *)key
+{
+    NSData *valueData = nil;
+    if(valueData != nil)
+    {
+        NSString *value = [[NSString alloc] initWithData:valueData encoding:NSUTF8StringEncoding];
+        return value;
+    }
+    else
+    {
+        return nil;
+    }
+}
+
+extern const unsigned char  MGBdsdfalkoiensalndsasduchiouwenkj[];
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
@@ -70,6 +92,5 @@
     
     NSLog(@"application will terminate");
 }
-
 
 @end
