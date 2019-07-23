@@ -123,6 +123,59 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		74EC484C22E5E4560043657F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C3C4861522BDE19E00B24E1A /* AppDelegate.h */,
+				C3C4861622BDE19E00B24E1A /* AppDelegate.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		74EC485022E5E4A30043657F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C3C4861822BDE19E00B24E1A /* ViewController.h */,
+				C3C4861922BDE19E00B24E1A /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		74EC485122E5E4BE0043657F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				74EC485422E5E4E90043657F /* StoryBoard */,
+				74EC485322E5E4D00043657F /* Image */,
+				74EC485222E5E4C70043657F /* Plist */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		74EC485222E5E4C70043657F /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		74EC485322E5E4D00043657F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		74EC485422E5E4E90043657F /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C3C4862322BDE19F00B24E1A /* Info.plist */,
+				C3C4861E22BDE19F00B24E1A /* Assets.xcassets */,
+				C3C4861B22BDE19E00B24E1A /* Main.storyboard */,
+				C3C4862022BDE19F00B24E1A /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
 		78002389E89E06205B04897A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,14 +220,9 @@
 		C3C4861422BDE19E00B24E1A /* iOSPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				C3C4861522BDE19E00B24E1A /* AppDelegate.h */,
-				C3C4861622BDE19E00B24E1A /* AppDelegate.m */,
-				C3C4861822BDE19E00B24E1A /* ViewController.h */,
-				C3C4861922BDE19E00B24E1A /* ViewController.m */,
-				C3C4861B22BDE19E00B24E1A /* Main.storyboard */,
-				C3C4861E22BDE19F00B24E1A /* Assets.xcassets */,
-				C3C4862022BDE19F00B24E1A /* LaunchScreen.storyboard */,
-				C3C4862322BDE19F00B24E1A /* Info.plist */,
+				74EC485122E5E4BE0043657F /* Resource */,
+				74EC485022E5E4A30043657F /* ViewController */,
+				74EC484C22E5E4560043657F /* App */,
 				C3C4862422BDE19F00B24E1A /* main.m */,
 			);
 			path = iOSPlayground;
