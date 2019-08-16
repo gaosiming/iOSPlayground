@@ -11,7 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = C33923C722DB880E002CA693 /* Build configuration list for PBXAggregateTarget "OCLint" */;
 			buildPhases = (
-				C33923C822DB89B8002CA693 /* ShellScript */,
+				C33923C822DB89B8002CA693 /* Run Script */,
 			);
 			dependencies = (
 			);
@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		70157E23AA82E8BEAB0C7CEE /* Pods_iOSPlaygroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E02E3213606DC2050862FCA /* Pods_iOSPlaygroundTests.framework */; };
+		74D87C4E22FC507000AB056B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D87C4D22FC507000AB056B /* RootViewController.m */; };
 		9A5CBC3548322C78DE56E708 /* Pods_iOSPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D537A9ED6B01E4AE681F28 /* Pods_iOSPlayground.framework */; };
 		9F0FE30B617D5EAEFB01BB6B /* Pods_iOSPlaygroundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC20E28679F950D90331E8D /* Pods_iOSPlaygroundUITests.framework */; };
 		C3C4861722BDE19E00B24E1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C4861622BDE19E00B24E1A /* AppDelegate.m */; };
@@ -58,6 +59,8 @@
 		2AC20E28679F950D90331E8D /* Pods_iOSPlaygroundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPlaygroundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43813472CA8DCE011F1A0A6F /* Pods-iOSPlaygroundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlaygroundUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlaygroundUITests/Pods-iOSPlaygroundUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		68A1939A9C14FD473F11D8ED /* Pods-iOSPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlayground/Pods-iOSPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		74D87C4C22FC507000AB056B /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ViewController/RootViewController.h; sourceTree = "<group>"; };
+		74D87C4D22FC507000AB056B /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = ViewController/RootViewController.m; sourceTree = "<group>"; };
 		8C8D17326650738C240B5EEF /* Pods-iOSPlaygroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlaygroundTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSPlaygroundTests/Pods-iOSPlaygroundTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E02E3213606DC2050862FCA /* Pods_iOSPlaygroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSPlaygroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1FE5B8A75F40B5E84FBCD0 /* Pods-iOSPlaygroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSPlaygroundTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSPlaygroundTests/Pods-iOSPlaygroundTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 			children = (
 				C3C4861822BDE19E00B24E1A /* ViewController.h */,
 				C3C4861922BDE19E00B24E1A /* ViewController.m */,
+				74D87C4C22FC507000AB056B /* RootViewController.h */,
+				74D87C4D22FC507000AB056B /* RootViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 		C3C4860A22BDE19E00B24E1A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = gaosiming;
 				TargetAttributes = {
@@ -463,7 +469,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C33923C822DB89B8002CA693 /* ShellScript */ = {
+		C33923C822DB89B8002CA693 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -472,13 +478,14 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"sssssssss!!!!!!!!!!!\"\nsource ~/.bash_profile\ncd ${SRCROOT}\nxcodebuild clean\nxcodebuild  -workspace iOSPlayground.xcworkspace -scheme iOSPlayground | xcpretty -r json-compilation-database --output compile_commands.json\noclint-json-compilation-database -v \\\n-e Pods \\\n-e AFNetworking \\\n-e Bugly \\\n-e CocoaLumberjack \\\n-e Masonry \\\n-e SDWebImage \\\n-e YYKit \\\noclint_args -- -report-type xcode \\\n-disable-rule ShortVariableName \\\n-rc=MINIMUM_CASES_IN_SWITCH=3 \\\n-rc=CYCLOMATIC_COMPLEXITY=10 \\\n-rc=LONG_CLASS=700 \\\n-rc=LONG_LINE=200 \\\n-rc=NCSS_METHOD=40 \\\n-rc=NESTED_BLOCK_DEPTH=5 \\\n-rc=TOO_MANY_FIELDS=20 \\\n-rc=TOO_MANY_METHODS=30 \\\n-rc=TOO_MANY_PARAMETERS=6\nexit\n\n";
+			shellScript = "#!/bin/bash\n\n# 指定编码\nexport LANG=\"zh_CN.UTF-8\"\nexport LC_COLLATE=\"zh_CN.UTF-8\"\nexport LC_CTYPE=\"zh_CN.UTF-8\"\nexport LC_MESSAGES=\"zh_CN.UTF-8\"\nexport LC_MONETARY=\"zh_CN.UTF-8\"\nexport LC_NUMERIC=\"zh_CN.UTF-8\"\nexport LC_TIME=\"zh_CN.UTF-8\"\nexport LC_ALL=\n\nfunction checkDepend () {\ncommand -v xcpretty >/dev/null 2>&1 || { \necho >&2 \"I require xcpretty but it's not installed.  Install：gem install xcpretty\"; \nexit\n}\ncommand -v oclint-json-compilation-database >/dev/null 2>&1 || { \necho >&2 \"I require oclint-json-compilation-database but it's not installed.  Install：brew install oclint\"; \nexit\n}\n}\n\nfunction oclintForProject () {\n\n# 检测依赖\ncheckDepend\n\nprojectName=$1\nscheme=$2\nreportType=$3\n\nREPORT_PMD=\"pmd\"\nREPORT_XCODE=\"xcode\"\nREPORT_HTML=\"html\"\n\nmyworkspace=${projectName}\nmyscheme=${scheme} \necho \"myworkspace是：${myworkspace}\"\necho \"myscheme是：${myscheme}\"\necho \"reportType为：${reportType}\"\n\n# 清除上次编译数据\nif [ -d ./build/derivedData ]; then\necho '-----清除上次编译数据derivedData-----'\nrm -rf ./build/derivedData\nfi\n\n# xcodebuild -workspace $myworkspace -scheme $myscheme clean\nxcodebuild clean\n\necho '-----开始编译-----'\n\n# 生成编译数据\nxcodebuild -workspace ${myworkspace} -scheme ${myscheme} -sdk iphonesimulator -derivedDataPath ./build/derivedData -configuration Debug COMPILER_INDEX_STORE_ENABLE=NO | xcpretty -r json-compilation-database -o compile_commands.json\n\n\nif [ -f ./compile_commands.json ]\nthen\necho '-----编译数据生成完毕-----'\nelse\necho \"-----生成编译数据失败-----\"\nreturn -1\nfi\n\necho '-----分析中-----'\n\n# 自定义排除警告的目录，将目录字符串加到数组里面\n# 转化为：-e Debug.m -e Port.m -e Test\nexclude_files=(\"cardloan_js\" \"Pods\")\n\nexclude=\"\"\nfor i in ${exclude_files[@]}; do\nexclude=${exclude}\"-e \"${i}\" \"\ndone\necho \"排除目录：${exclude}\"\n\n# 分析reportType\nif [[ ${reportType} =~ ${REPORT_PMD} ]]  \nthen\nnowReportType=\"-report-type pmd -o pmd.xml\"\nelif [[ ${reportType} =~ ${REPORT_HTML} ]] \nthen\nnowReportType=\"-report-type html -o oclint_result.html\"    \nelse\nnowReportType=\"-report-type xcode\"\nfi\n\n# 自定义report 如：\n# nowReportType=\"-report-type html -o oclint_result.html\"\n\n# 生成报表\noclint-json-compilation-database ${exclude} -- \\\n${nowReportType} \\\n-rc LONG_LINE=200 \\\n-disable-rule ShortVariableName \\\n-disable-rule ObjCAssignIvarOutsideAccessors \\\n-disable-rule AssignIvarOutsideAccessors \\\n-max-priority-1=100000 \\\n-max-priority-2=100000 \\\n-max-priority-3=100000\n\nrm compile_commands.json\nif [[ ${reportType} =~ ${REPORT_PMD} ]] && [ ! -f ./pmd.xml ]\nthen\necho \"-----分析失败-----\"\nreturn -1\nelse\necho '-----分析完毕-----'\nreturn 0\nfi\n}\n\n# 替换workspace的名字\nmyworkspace=\"iOSPlayground.xcworkspace\" \n# 替换scheme的名字\nmyscheme=\"iOSPlayground\" \n# 输出方式 xcode/pmd\nreportType=\"xcode\"\n\noclintForProject ${myworkspace} ${myscheme} ${reportType}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -489,6 +496,7 @@
 			files = (
 				C3C4861A22BDE19E00B24E1A /* ViewController.m in Sources */,
 				C3C4862522BDE19F00B24E1A /* main.m in Sources */,
+				74D87C4E22FC507000AB056B /* RootViewController.m in Sources */,
 				C3C4861722BDE19E00B24E1A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -689,6 +697,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaosiming.iOSPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "";
 			};
 			name = Debug;
 		};
@@ -707,6 +716,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaosiming.iOSPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "";
 			};
 			name = Release;
 		};

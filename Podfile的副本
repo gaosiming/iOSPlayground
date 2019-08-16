@@ -10,7 +10,10 @@ target 'iOSPlayground' do
   pod 'SDWebImage'
   pod 'Bugly'
   pod 'CocoaLumberjack'
-    # Pods for iOSPlayground
+  
+  
+
+  # Pods for iOSPlayground
 
   target 'iOSPlaygroundTests' do
     inherit! :search_paths
